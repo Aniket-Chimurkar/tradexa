@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</head>
+<style>
+   
+.g{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border: transparent;
+    margin-left: 270px;
+    width: 1000px;
+    margin-top: 50px;
+}
+.centered {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: bold;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.e{
+    display: flex;
+    
+}
+</style>
+<body>
+
+<div class="container-fluid">
+    <nav class="navbar navbar-light bg-black justify-content-between">
+        <a class="navbar-brand text-white bg-black ms-3">WORKOUT</a>
+       
+         <div>
+            <ul class="navbar-nav d-flex flex-row bd-highlight mb-3" >
+                <li class="nav-item active  me-5" >
+                  <a class="nav-link text-white bg-black" href="#">EXCERCTSE</a>
+                </li>
+                <li class="nav-item  me-5">
+                  <a class="nav-link text-white bg-black" href="#">TRAINER</a>
+                </li>
+                <li class="nav-item  me-5">
+                  <a class="nav-link text-white bg-black" href="#">PRICING</a>
+                </li>
+                <li class="nav-item  me-5">
+                    <a class="nav-link text-white bg-black" href="#">LOGIN</a>
+                  </li>
+              </ul>
+         </div>
+      
+      </nav>
+      <div>
+        <div><div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          
+            <div class="carousel-inner">
+              <div class="carousel-item active d-flex flex-row bg-black">
+                <div style="height: 700px; border: 2px solid black;" class="d-block w-50">
+                 <div  style=" width:300px ;  margin-left: 300px; margin-top: 100px;">
+                    <h1 style="background-color: black;color: white; font-size: 100px;font-weight: bold;">Cardio</h1>
+                    <h1 style="background-color: black;color: white;font-size: 100px;font-weight: bold;">Excercise</h1>
+                 </div>
+                <div style="width: 400px;margin-left:300px ; margin-top:50px">
+                    <p style="background-color: black;color: grey;font-size: 10px;font-weight: bold;">Lorem Ipsum, sometimes referred to as 'lipsum', is the placeholder text used in design when creating content.
+                        It helps designers plan out where the content will sit, without needing to wait for the content to be written and approved. 
+                        It originally comes from a Latin text, but to today's reader, it's seen as gibberish</p>
+                </div>
+                <div style="width: 400px;margin-left:300px ; margin-top:50px">
+                    <button type="button" class="btn btn-success btn-lg">Get Started</button>
+                    <button type="button" class="btn btn-secondary btn-lg ms-4">Preview</button>
+                </div>
+                </div>
+                <img src="https://images.squarespace-cdn.com/content/v1/5caa7ad4b7c92c698d8a247d/1594154839398-G82JJUCOGMKQV9SLXHUY/lunge.jpeg?format=1000w" height="700px" class="d-block w-50" alt="...">
+              
+              </div>
+              
+             
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div></div>
+      </div>
+      <div  class=" bg-black"  class=" bg-black justify-content-between">
+        <h3 style="margin-left:300px;background-color: black;color: white; " >Popular Excercise</h3>
+        
+        <div class="g">
+
+            <div class="container">
+                <img src="https://www.tacomadailyindex.com/wp-content/uploads/2022/08/29958353_web1_M2-IDX-20220802-Best-Weight-Loss-Programs-Teaser-copy.jpeg" alt="Snow" style="width:270px; margin-top: 50px;">
+                <div class="centered">TREADMILL</div>
+              </div>
+
+              <div class="container">
+                <img src="https://www.anytimefitness.com/wp-content/uploads/2020/06/warm-up-stretching-sm.jpg" alt="Snow" style="width:270px;margin-top: 50px;">
+                <div class="centered">STRETCHING</div>
+              </div>
+
+              <div class="container">
+                <img src="https://content.thriveglobal.com/wp-content/uploads/2021/08/yogajpg.jpg?w=1550" alt="Snow" style="width:270px;margin-top: 50px; ">
+                <div class="centered">YOGA</div>
+              </div>
+
+              <div class="container">
+                <img src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1253,c_limit/77616393-eafe-4c97-9df4-89b65c2fcab9/how-to-find-your-optimal-running-paces.jpg" alt="Snow" style="width:270px;margin-top: 50px;">
+                <div class="centered">RUNNING</div>
+              </div>
+
+              <div class="container">
+                <img src="https://www.mensjournal.com/wp-content/uploads/mf/_main_liftlift.jpg?w=900&h=506&crop=1&quality=86&strip=all" alt="Snow" style="width:270px;margin-top: 50px;">
+                <div class="centered">LIFTING</div>
+              </div>
+
+              <div class="container">
+                <img src="https://img.livestrong.com/630x/cme-data/getty%2F7119b577e9404e34a183988d66d236bb.jpg?type=webp" alt="Snow" style="width:270px;margin-top: 50px;">
+                <div class="centered">PUSHUP</div>
+              </div>
+
+        </div>
+      </div>
+
+      <div class="e">
+        <div style="border: transparent;width: 50%;height: 500px;background-color: rgb(19, 18, 18); " >
+       <div style="text-align: center;margin-top: 50px;">
+        <h1  style="color: white; font-size: 75px;">Workout</h1>
+        <h1  style="color: white; font-size: 75px;">Program</h1>
+        <h1  style="color: white;  font-size: 75px;">Made</h1>
+        <h1  style="color: white;  font-size: 75px;">For You</h1>
+       </div>
+    
+       
+        </div>
+    
+    
+    
+        <div style="border: transparent;width: 50%; height: 500px; background-color:  rgb(19, 18, 18);">
+            <div style="height: 300px; width:500px ; border: transparent; margin-top: 80px;">
+                <p style="color: rgb(189, 182, 182);font-size: 18px; ">Lorem Ipsum, sometimes referred to as 'lipsum', is the placeholder text used in design when creating content.
+                    It helps designers plan out where the content will sit, without needing to wait for the content to be written and approved. 
+                    It originally comes from a Latin text, but to today's reader, it's seen as gibberish</p>
+                    <button type="button" class="btn btn-success btn-lg mt-5">Get Started</button>
+            </div>
+            
+        </div>
+       </div>
+
+
+       <div style="display: flex;">
+        <div class="card bg-black " style="width: 33.33%; ">
+            <img class="card-img-top bg-black " src="https://imaging.broadway.com/images/regular-43/w360/115807-10.jpg" height="300px" alt="Card image cap">
+            <div class="card-body  bg-black ">
+              <h5 class="card-title" style="background-color: black ; color:white ; text-align: center;">Samantha William</h5>
+              <p style="text-align: center; font-size: 15px;">Trainer</p>
+            </div>
+          </div>
+
+          <div class="card bg-black " style="width: 33.33%; ">
+            <img class="card-img-top bg-black " src="https://images.lifestyleasia.com/wp-content/uploads/sites/2/2022/01/25110848/27-questions-gabriel-carroll-general-manager-hybrid-gym-537x806.jpg" height="300px" alt="Card image cap">
+            <div class="card-body  bg-black ">
+              <h5 class="card-title" style="background-color: black ; color:white ; text-align: center;">Karen Summer</h5>
+              <p style="text-align: center; font-size: 15px;">Trainer</p>
+            </div>
+          </div>
+
+          <div class="card bg-black " style="width: 33.33%; ">
+            <img class="card-img-top bg-black " src="https://scontent.fpnq7-4.fna.fbcdn.net/v/t39.30808-6/291286556_5181873631866316_7063693581728575835_n.jpg?stp=dst-jpg_s640x640&_nc_cat=105&ccb=1-7&_nc_sid=a26aad&_nc_ohc=gWTXd4rU13sAX-4XaTy&_nc_ht=scontent.fpnq7-4.fna&oh=00_AT_2Yxh4_QTu-enC34XTV37dml5uIf8i7WjDatd3gcceTg&oe=63023B39" height="300px" alt="Card image cap">
+            <div class="card-body  bg-black ">
+              <h5 class="card-title" style="background-color: black ; color:white ; text-align: center;">Jonathen Wise</h5>
+              <p style="text-align: center; font-size: 15px;">Trainer</p>
+            </div>
+          </div>
+       </div>
+
+
+       <div style="width: 100%; height:150px ; border-bottom: 2px solid grey; display: flex;" class=" bg-black ">
+         <div style="margin-left:50px ; color: white; margin-top: 70px;">01</div>
+         <div>
+            <h1 style="margin-left:500px ; color: white; margin-top: 30px;">Workout at Home</h1>
+            <p style="margin-left:500px ; font-size: 18px; font-weight: bold;">15 Videos</p>
+         </div>
+        
+       </div>
+
+       <div style="width: 100%; height:150px ; border-bottom: 2px solid grey; display: flex;" class=" bg-black ">
+        <div style="margin-left:50px ; color: white; margin-top: 70px;">02</div>
+        <div>
+           <h1 style="margin-left:500px ; color: white; margin-top: 30px;">Stay Strong And Fit</h1>
+           <p style="margin-left:500px ; font-size: 18px; font-weight: bold;">15 Videos</p>
+        </div>
+       
+      </div>
+
+      <div style="width: 100%; height:150px ; border-bottom: 2px solid grey; display: flex;" class=" bg-black ">
+        <div style="margin-left:50px ; color: white; margin-top: 70px;">03</div>
+        <div>
+           <h1 style="margin-left:500px ; color: white; margin-top: 30px;">Hign Intensity</h1>
+           <p style="margin-left:500px ; font-size: 18px; font-weight: bold;">15 Videos</p>
+        </div>
+       
+      </div>
+      <div style="width: 100%; height:150px ; border-bottom: 2px solid grey; display: flex;" class=" bg-black ">
+        <div style="margin-left:50px ; color: white; margin-top: 70px;">04</div>
+        <div>
+           <h1 style="margin-left:500px ; color: white; margin-top: 30px;">Sample Workout</h1>
+           <p style="margin-left:500px ; font-size: 18px; font-weight: bold;">15 Videos</p>
+        </div>
+       
+      </div>
+
+      <div style="width: 100%; height:150px ; display: flex;" class=" bg-black ">
+        <div style="margin-left:50px ; color: white; margin-top: 70px;">05</div>
+        <div>
+           <h1 style="margin-left:500px ; color: white; margin-top: 30px;">Burn Calorirs</h1>
+           <p style="margin-left:500px ; font-size: 18px; font-weight: bold;">15 Videos</p>
+        </div>
+       
+      </div>
+
+      <div style="display: flex; background-color: black;">
+        <div style="height: 400px; width: 20%; background-color: black; margin-left: 5%;">
+            <h1 style="color: white;  margin-top: 50px;">WORKOUT</h1>
+            <p style="font-size: 18px; color: white; ">Lorem Ipsum, sometimes referred to as 'lipsum', is the placeholder text used in design when creating content.
+                It helps designers plan out where the content will sit, without needing to wait for the content to be written and approved. 
+                It originally comes from a Latin text, but to today's reader, it's seen as gibberish</p>
+        </div>
+        
+        <div style="height: 400px; width: 20%; background-color: black; margin-left: 8%; ">
+            
+            <p style="font-size: 25px ; color : white; margin-top: 50px;">Business</p>
+            <p style="font-size: 25px; color: white; margin-top: 50px; ">Partnership</p>
+            <p style="font-size: 25px; color: white; margin-top: 50px; ">Career</p>
+        </div>
+       
+        <div style="height: 400px; width: 20%; background-color: black; margin-left: 5%;">
+           
+            <p style="font-size: 25px ; color : white; margin-top: 50px;">BLOGS</p>
+            <p style="font-size: 25px; color: white; margin-top: 50px; ">Security</p>
+            <p style="font-size: 25px; color: white; margin-top: 50px; ">Security</p>
+
+        </div>
+
+        <div style="height: 400px; width: 20%; background-color: black; margin-left: 5%;">
+            
+            <p style="font-size: 25px ; color : white; margin-top: 50px;">Contact us</p>
+            <p style="font-size: 25px; color: white; margin-top: 50px; ">Privency Policy</p>
+            <p style="font-size: 25px; color: white; margin-top: 50px; ">Terms And Condition</p>
+
+        </div>
+      </div>
+       
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
